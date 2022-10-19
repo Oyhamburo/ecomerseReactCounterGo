@@ -1,0 +1,9 @@
+.priceTotal {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.comprar {
+    margin-left: 2rem;
+}

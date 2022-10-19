@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.nav__icon {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__menu {
+    display: flex;
+    cursor: pointer;
+}
+
+.navbarcart {
+    width: 50px;
+}

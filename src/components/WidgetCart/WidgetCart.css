@@ -1,0 +1,9 @@
+.widgetcart {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background-color: gray;
+    left: 78%;
+    top: 100%;
+    
+}
