@@ -1,5 +1,4 @@
 import './NavBar.css';
-import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { CartContext } from '../context/CartContext';
@@ -8,8 +7,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Badge from '@mui/material/Badge';
 import WidgetCart from '../WidgetCart/WidgetCart';
@@ -33,15 +30,14 @@ const NavBar = () => {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar>
-                    
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        <Link to="/"> <ul>Home</ul></Link>
+                        <Link to="/" className='link__navbar'> <ul>Home</ul></Link>
                     </Typography>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        <Link to="/cart"> <ul>Cart</ul></Link>
+                        <Link to="/cart" className='link__navbar' > <ul>Cart</ul></Link>
                     </Typography>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        <Link to="/contacto"> <ul>Contacto</ul></Link>
+                        <Link to="/contacto" className='link__navbar'> <ul>Contacto</ul></Link>
                     </Typography>
                     <Button onClick={handleClick} color="inherit">
                         <Badge badgeContent={totalNumber()} color="secondary">

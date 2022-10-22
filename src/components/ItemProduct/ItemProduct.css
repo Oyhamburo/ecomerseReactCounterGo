@@ -1,7 +1,16 @@
 .cardproduct {
+    grid-area: 'myArea';
     display: flex;
     justify-content: center;
+}
+.cardproduct__card{
+    width: 365px;
+
+}
+.grid__card{
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea';
+    gap: 4rem;
+    margin-top: 3rem;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }

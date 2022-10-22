@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react'
 import './ItemContainer.css'
 import ItemList from '../ItemList/ItemList'
-import products from '../../utils/product.mock'
 import { collection, getDocs } from 'firebase/firestore'
 import db from '../../firebaseConfig'
 import { useParams } from 'react-router-dom'
 import CategoryBtn from '../category/CategoryBtn'
 import { CircularProgress } from '@mui/material'
-import { CommentBankOutlined } from '@mui/icons-material'
 
 
 const Itemcontainer = ({ section }) => {
@@ -52,9 +50,9 @@ const Itemcontainer = ({ section }) => {
             <h2>{section}</h2>
             <div><CategoryBtn /></div>
             {loading ?
-                (<div className='container-progress'><CircularProgress /></div>)
+                (<div className='container-progress centrar'><CircularProgress /></div>)
                 :
-                (<> <ItemList dataProducts={listProducts} /> </>)
+                (<> <ItemList dataProducts={listProducts}  /> </>)
             }
         </div>
     )

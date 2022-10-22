@@ -3,7 +3,10 @@
     font-family: 'Kanit', sans-serif;
 
 }
-
+.link__navbar{
+    text-decoration: none;
+    color: white;
+}
 .nav__icon {
     width: 100px;
 }

@@ -9,8 +9,9 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 import MenuList from '@mui/material/MenuList';
+import './Category.css';
 
-const options = [<Link to="/">Todos</Link>,<Link to="/category/cajas">Cajas</Link>,<Link to="/category/skins">Skins</Link>];
+const options = [<Link to="/category/cajas" className='color__opt' >Cajas</Link>,<Link to="/" className='color__opt' >Todos</Link>,<Link to="/category/skins" className='color__opt'>Skins</Link>];
 
 export default function CategoryBtn() {
   const [open, setOpen] = React.useState(false);

@@ -3,7 +3,9 @@
     bottom: 1rem;
     left: 1rem;
 }
-
+.total{
+    text-decoration: none;
+}
 .comprar {
     margin-left: 2rem;
 }

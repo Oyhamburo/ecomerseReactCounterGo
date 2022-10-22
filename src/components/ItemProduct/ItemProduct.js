@@ -4,7 +4,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 const ItemProduct = ({ data, action }) => {
@@ -14,12 +13,12 @@ const ItemProduct = ({ data, action }) => {
 
     return (
         <Link to={`/productos/${id}`} className='cardproduct' >
-            <Card sx={{ maxWidth: 345 }}>
+            <Card  className='cardproduct__card'>
                 <CardMedia
                     component="img"
                     height="140"
                     image={`/assets/${image}`}
-                    alt="green iguana"
+                    alt="skin cs"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
